@@ -37,7 +37,7 @@ function Confirm(props) {
             grade: currentState.Basic.uniSelect,
             course: currentState.Basic.Course
         };
-        emailjs.send("service_xxic0bi", "template_cogbgso", template_param, 'xTvW1ktpKRkxXsIgN').then((result) => {
+        emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLETE_ID, template_param, process.env.REACT_APP_MY_KEY).then((result) => {
             console.log(result.text);
             setDialogTitle("お問合せ内容を受け付けました。登録したメールアドレスをご確認ください。")
             handleClickOpen()

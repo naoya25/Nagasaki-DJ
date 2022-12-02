@@ -24,7 +24,7 @@ import Drawer from '@mui/material/Drawer';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-const drawerWidth = 240;
+const drawerWidth = 240
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
   ({ theme, open }) => ({
