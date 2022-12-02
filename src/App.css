@@ -14,7 +14,10 @@ body #root {
 #vertical-tabpanel-0,
 .MuiBox-root,
 .MuiTypography-root,
-#canvas-container{
+#canvas-container,
+#member-all,
+.MuiTypography-root,
+#vertical-tabpanel-2{
   height: 100%;
 }
 
