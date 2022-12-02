@@ -1,9 +1,10 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-
+import {
+    Grid,
+    Stepper,
+    Step,
+    StepLabel
+} from '@mui/material';
 import Basic from "./Basic";
 import Optional from "./Optional";
 import Confirm from "./Confirm";

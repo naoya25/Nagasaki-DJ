@@ -5,24 +5,26 @@ import Member from './components/Member'
 import Event from './components/Event'
 import Contact from './components/Contact'
 
-import * as React from 'react';
+import React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
+import {
+  Box,
+  Toolbar,
+  CssBaseline,
+  Typography,
+  Divider,
+  IconButton,
+  Tabs,
+  Tab,
+  Drawer
+} from '@mui/material';
 import MuiAppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import CssBaseline from '@mui/material/CssBaseline';
-import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Drawer from '@mui/material/Drawer';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import PropTypes from 'prop-types';
 
 const drawerWidth = 240
 

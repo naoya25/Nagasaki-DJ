@@ -1,8 +1,6 @@
-import Grid from '@mui/material/Grid';
 import { UserInputData } from "./Content";
 import { useForm, Controller } from "react-hook-form";
-import MenuItem from '@mui/material/MenuItem';
-import { Button, TextField } from "@mui/material";
+import { Grid, Button, TextField, MenuItem } from "@mui/material";
 import React, { useContext } from "react";
 
 
