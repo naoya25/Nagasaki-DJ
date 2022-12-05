@@ -26,3 +26,8 @@ body #root {
   background-size: cover;
   background-position: center center;
 }
+
+#card_image{
+  height: 300px;
+  object-fit: cover;
+}
