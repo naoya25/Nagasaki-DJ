@@ -31,3 +31,8 @@ body #root {
   height: 300px;
   object-fit: cover;
 }
+
+#cards{
+  display: flex;
+  flex-wrap: wrap;
+}

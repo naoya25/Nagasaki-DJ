@@ -4,6 +4,7 @@ import img6 from "../images/image6.jpg"
 import CardBox from './CardBox'
 import { Image, ScrollControls, Scroll } from '@react-three/drei'
 import { Canvas, useThree } from '@react-three/fiber'
+import '../App.css'
 
 const Member = () => {
   return (
@@ -24,14 +25,56 @@ const Member = () => {
                 将来的にはDJが趣味の人を増やし、 気軽にDJができる環境を作っていきたいと思っています！
               </p>
               <h1>MEMBER</h1>
-              <CardBox
-                pageName="部長 内野光佳莉(DJ No-va)"
-                description="部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎"
-                snsurl1="https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y="
-                snsname1="DJインスタ"
-                snsurl2="https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y="
-                snsname2="個人インスタ"
-              />
+              <div id="cards">
+                <CardBox
+                  pageName="部長 内野光佳莉(DJ No-va)"
+                  description="部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎"
+                  snsurl1="https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y="
+                  snsname1="DJインスタ"
+                  snsurl2="https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y="
+                  snsname2="個人インスタ"
+                />
+                <CardBox
+                  pageName="部長 内野光佳莉(DJ No-va)"
+                  description="部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎"
+                  snsurl1="https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y="
+                  snsname1="DJインスタ"
+                  snsurl2="https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y="
+                  snsname2="個人インスタ"
+                />
+                <CardBox
+                  pageName="部長 内野光佳莉(DJ No-va)"
+                  description="部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎"
+                  snsurl1="https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y="
+                  snsname1="DJインスタ"
+                  snsurl2="https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y="
+                  snsname2="個人インスタ"
+                />
+                <CardBox
+                  pageName="部長 内野光佳莉(DJ No-va)"
+                  description="部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎"
+                  snsurl1="https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y="
+                  snsname1="DJインスタ"
+                  snsurl2="https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y="
+                  snsname2="個人インスタ"
+                />
+                <CardBox
+                  pageName="部長 内野光佳莉(DJ No-va)"
+                  description="部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎"
+                  snsurl1="https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y="
+                  snsname1="DJインスタ"
+                  snsurl2="https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y="
+                  snsname2="個人インスタ"
+                />
+                <CardBox
+                  pageName="部長 内野光佳莉(DJ No-va)"
+                  description="部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎"
+                  snsurl1="https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y="
+                  snsname1="DJインスタ"
+                  snsurl2="https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y="
+                  snsname2="個人インスタ"
+                />
+              </div>
             </Scroll>
           </ScrollControls>
         </Canvas>

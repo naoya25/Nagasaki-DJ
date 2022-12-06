@@ -11,7 +11,7 @@ const CardBox = ({pageName, description, snsurl1, snsname1, snsurl2, snsname2}) 
           class="w-full"
           src={img6}
           alt="Sunset in the mountains"
-        ></img>
+        />
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2">{pageName}</div>
           <p class="text-gray-700 text-base">
