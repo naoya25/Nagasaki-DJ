@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import img4 from "../images/image4.jpg"
 import img6 from "../images/image6.jpg"
-import CardBox from './CardBox'
 import { Image, ScrollControls, Scroll } from '@react-three/drei'
 import { Canvas, useThree } from '@react-three/fiber'
 import '../App.css'
@@ -13,7 +12,7 @@ const Member = () => {
         <Canvas style={{width: '100%', height: '100%'}}>
           <ScrollControls pages={3}>
             <Scroll>
-              <Image url={img4} scale={[2,2,2]} position={[2,0,1]} />
+              <Image url={img4} scale={[4,4,4]} position={[2,0,1]} />
               <Image url={img6} scale={[2,2,2]} position={[-2,0,1]} />
             </Scroll>
             <Scroll html>
@@ -26,54 +25,51 @@ const Member = () => {
               </p>
               <h1>MEMBER</h1>
               <div id="cards">
-                <CardBox
-                  pageName="部長 内野光佳莉(DJ No-va)"
-                  description="部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎"
-                  snsurl1="https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y="
-                  snsname1="DJインスタ"
-                  snsurl2="https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y="
-                  snsname2="個人インスタ"
-                />
-                <CardBox
-                  pageName="部長 内野光佳莉(DJ No-va)"
-                  description="部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎"
-                  snsurl1="https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y="
-                  snsname1="DJインスタ"
-                  snsurl2="https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y="
-                  snsname2="個人インスタ"
-                />
-                <CardBox
-                  pageName="部長 内野光佳莉(DJ No-va)"
-                  description="部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎"
-                  snsurl1="https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y="
-                  snsname1="DJインスタ"
-                  snsurl2="https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y="
-                  snsname2="個人インスタ"
-                />
-                <CardBox
-                  pageName="部長 内野光佳莉(DJ No-va)"
-                  description="部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎"
-                  snsurl1="https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y="
-                  snsname1="DJインスタ"
-                  snsurl2="https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y="
-                  snsname2="個人インスタ"
-                />
-                <CardBox
-                  pageName="部長 内野光佳莉(DJ No-va)"
-                  description="部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎"
-                  snsurl1="https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y="
-                  snsname1="DJインスタ"
-                  snsurl2="https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y="
-                  snsname2="個人インスタ"
-                />
-                <CardBox
-                  pageName="部長 内野光佳莉(DJ No-va)"
-                  description="部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎"
-                  snsurl1="https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y="
-                  snsname1="DJインスタ"
-                  snsurl2="https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y="
-                  snsname2="個人インスタ"
-                />
+                <div className="ContentCard p-4">
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg text-center">
+                    <img
+                      id='card_image'
+                      class="w-full"
+                      src={img6}
+                      alt="Sunset in the mountains"
+                    />
+                    <div class="px-6 py-4">
+                      <div class="font-bold text-xl mb-2">部長 内野光佳莉(DJ No-va)</div>
+                      <p class="text-gray-700 text-base">
+                        部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎
+                      </p>
+                      <p class="text-gray-700 text-base">
+                        <a href='https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y=' target='_blank'>→DJインスタ</a>
+                      </p>
+                      <p class="text-gray-700 text-base">
+                        <a href='https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y=' target='_blank'>→個人インスタ</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="ContentCard p-4">
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg text-center">
+                    <img
+                      id='card_image'
+                      class="w-full"
+                      src={img6}
+                      alt="Sunset in the mountains"
+                    />
+                    <div class="px-6 py-4">
+                      <div class="font-bold text-xl mb-2">部長 内野光佳莉(DJ No-va)</div>
+                      <p class="text-gray-700 text-base">
+                        部長のひかりです！普段はDJ No-vaとして、ジャンル問わず様々なイベントに出演しています！また、プログラミングスクールでのメンターや、ダンスもしています！DJサークルは、音楽好きの方、DJに興味がある方、誰でも入部大大大歓迎です！是非、SNSのDMに気軽に連絡いただけると嬉しいです❤︎
+                      </p>
+                      <p class="text-gray-700 text-base">
+                        <a href='https://instagram.com/dj__no_va?igshid=YmMyMTA2M2Y=' target='_blank'>→DJインスタ</a>
+                      </p>
+                      <p class="text-gray-700 text-base">
+                        <a href='https://instagram.com/hikarinrin_____?igshid=YmMyMTA2M2Y=' target='_blank'>→個人インスタ</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                {/* カード追加場所 */}
               </div>
             </Scroll>
           </ScrollControls>
